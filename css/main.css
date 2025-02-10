@@ -1,0 +1,345 @@
+:root{
+  --main-color:#00C6FF;
+  --sub-color:#012A2A;
+  --btn-color:#20349A;
+}
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Pretendard-Regular', 'yg-jalnan', 'sanserif';
+  font-size: 1.6rem;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+.inner{
+  max-width:1860px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+#wrap{
+  overflow-x: hidden;
+}
+#foolpage{
+  height: 100vh;
+}
+/* header */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background: #fff;
+}
+.header .inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header .inner nav{}
+.header .inner nav .gnb{
+  display: flex;
+  justify-content: space-between;
+}
+.header .inner nav .gnb > li{}
+.header .inner nav .gnb > li > a{
+  display: block;
+  padding: 5% 100px ;
+  font-family: 'yg-jalnan';
+}
+
+#fp-nav ul li a span{
+  background: #fff;
+  border: 0.5px solid  #999;
+
+}
+#fp-nav.active ul li a span{
+  background: #fff;
+  border: 0.5px solid #000;
+}
+
+/* section home */
+.home{}
+.home .inner{
+  display: flex;
+  gap: 100px;
+}
+.home .inner .left{
+  background: #639C60;
+  width: calc((100% - 100px) / 2);
+  height: auto;
+  border-radius: 24px;
+  border: 0.5px solid #999;
+}
+.home .inner .flex-box{
+ /*  display: flex;
+  flex-wrap: wrap; */
+  width: calc((100% - 100px) / 2);
+}
+.home .inner .flex-box .upper{
+  display: flex;
+  gap: 100px;
+}
+.home .inner .flex-box .upper .center-image{
+  background: #20349A;
+  border-radius: 24px;
+  width: 300px;
+  height: 300px;
+  border: 0.5px solid #999;
+}
+.home .inner .flex-box .upper .title{
+  width: calc(100% - 400px);
+  font-size: 4rem;
+  font-family: 'yg-jalnan';
+  padding: 50px 0;
+
+}
+.home .inner .flex-box .upper .title h3{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  color: #fff;
+  animation: moved linear 2s ;
+}
+@keyframes moved{
+  0%{
+    transform: translateX(200%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+.home .inner .flex-box .upper .title h3 span{
+  color: #000;
+}
+
+.home .inner .flex-box .lower{
+  display: flex;
+  gap: 100px;
+}
+.home .inner .flex-box .lower .simbol{
+  padding: 50px 0;
+  animation: rotate 8s;
+  max-width: calc((100% - 100px) / 2);
+}
+.home .inner .flex-box .lower video{
+  width: calc((100% - 100px) / 2);
+  max-height: 368px;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 0.5px solid #999;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* epilogue */
+.Epilogue{}
+.Epilogue .inner{
+  position: relative;
+}
+.Epilogue .inner h2{
+  font-family: 'yg-jalnan';
+  font-size: 3.2rem;
+  text-align: center;
+  color: #012A2A;
+}
+.Epilogue .inner .flex_box{
+  display: flex;
+}
+.Epilogue .inner .flex_box .img_box{
+  width: calc(100% / 2);
+}
+.Epilogue .inner .flex_box .title_box{
+  width: calc(100% / 2);
+ padding: 250px 0;
+}
+.Epilogue .inner .flex_box .title_box h3{
+  font-family: 'yg-jalnan';
+  font-size: 3rem;
+}
+.Epilogue .inner .flex_box .title_box p{
+  font-family: 'Pretendard Regular';
+  font-size: 1.8rem;
+  padding-top: 20px;
+}
+.Epilogue .inner .bg{
+  width: 100px;
+  height: 100px;
+  background: #012a2a;
+  position: absolute;
+}
+.Epilogue .inner .bg_first{
+  top: 0;
+  left: 0;
+}
+.Epilogue .inner .bg_second{
+  bottom: 0;
+  right: 40%;
+  transform: translateX(-50%);
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.Epilogue .inner .bg_third{
+  top: 20%;
+  right: 5%;
+}
+/* About me */
+.Aboutme{}
+.Aboutme .inner{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.Aboutme .inner .img_box{
+  width: calc((100% - 50px) / 2);
+  text-align: center;
+}
+.Aboutme .inner .txt_box{
+  width: 100%;
+  color: #fff;
+  padding: 100px 0;
+}
+.Aboutme .inner .txt_box .bg_box{
+  width: 100%;
+  background: #000;
+  border-radius: 0 0 0 30px;
+  height: 80px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+
+/* Portfolio */
+.Portfolio{}
+.Portfolio .inner{
+ position: relative;
+}
+.Portfolio .inner h2{
+  text-align: center;
+  font-size: 3.2rem;
+  font-family: 'yg-jalnan';
+  margin-bottom: 20px;
+}
+.Portfolio .inner .bg{
+  height: 800px;
+  width: calc(50% / 2);
+  background: #00C6FF;
+  opacity: 0.1;
+  border-radius: 24px 24px 0 24px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Portfolio .inner .bg_small{
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  background: #00C6FF;
+  opacity: 0.1;
+  border-radius: 24px 24px 0 24px;
+  width: 300px;
+  height: 300px;
+}
+.Portfolio .inner .prf{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+.Portfolio .inner .prf > li{}
+.Portfolio .inner .prf > li > a{
+  display: block;
+  width: 400px;
+  height: 300px;
+  border: 0.5px solid #999;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.Portfolio .inner .prf > li:hover > a::before{
+  bottom: 5px;
+}
+.Portfolio .inner .prf > li > a::before{
+  content: 'view more';
+  display: inline-block;
+  background: #20349A;
+  color: #fff;
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 20px;
+  font-size: 2rem;
+  font-family: 'Pretendard-Regular';
+  border-radius: 12px;
+  transition: all 0.8s;
+}
+.Portfolio .inner .prf > li > a img{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+/* skill */
+.Skill{}
+.Skill .inner{}
+.Skill .inner h2{ 
+  font-family: 'yg-jalnan';
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Skill .inner ul{
+  display: flex;
+  gap: 20px;
+}
+.Skill .inner ul > li{}
+.Skill .inner ul > li > a{
+  display: block;
+  width: 300px;
+  height: 300px;
+  border: 0.5px solid rgba(0, 0, 0, 0.8);
+  position: relative;
+  border-radius: 12px;
+  transform: translateY(0);
+  transition: all 0.5s;
+  text-align: center;
+  padding: 50px 0;
+}
+.Skill .inner ul > li:hover > a{
+  transform: translateY(-30px);
+}
+.Skill .inner ul > li:hover > a img{
+
+}
+.Skill .inner ul > li > a::before{
+  content: attr(data-label);
+  background: #00C6FF;
+  padding: 20px 0;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  color: #fff;
+  width: 300px;
+  text-align: center;
+}

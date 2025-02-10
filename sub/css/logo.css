@@ -1,0 +1,118 @@
+@charset "utf-8";
+body{
+  font-family: 'Pretendard-Regular', 'yg-jalnan', 'sanserif';
+  font-size: 1.6rem;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+.inner{
+  max-width: 1860px;
+  margin: 0 auto;
+}
+#wrap{
+  overflow-x: hidden;
+}
+.header{
+
+}
+.header .inner{
+  display: flex;
+  margin-top: 20px;
+  padding: 20px 0 0;
+  align-items: center;
+  border-bottom: 0.5px dashed #000;
+  justify-content: space-between;
+}
+.header .inner .back{
+  display: flex;
+  border-right: 0.5px dashed #000;
+  align-items: center;
+  padding: 0 20px;
+}
+.header .inner .back a{
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+.header .inner .back a img{
+  display: block;
+  width: 100%;
+  transition: all 0.5s;
+}
+.header .inner .back p{
+  cursor: pointer;
+  font-family: 'yg-jalnan';
+}
+.header .inner .back:hover a img{
+  transform: translateX(-10px);
+}
+.header .inner .logo img{
+  width: 100%;
+  display: block;
+}
+
+/* main */
+.main{}
+.main .inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  align-items: center;
+}
+.main .inner .bg{
+  animation: rotate_bg 5s linear infinite;
+}
+@keyframes rotate_bg{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.main .inner .main_txt h2{
+  font-size: 2.6rem;
+  font-family: 'yg-jalnan';
+  font-weight: 600;
+  text-align: center;
+  padding: 0 450px;
+}
+.main .inner h2 span{
+  color: #FBD0DC;
+}
+.main .inner .main_txt{
+  display: flex;
+  align-items: center;
+}
+.main .inner .txt ul{}
+.main .inner .txt ul li{
+  font-family: 'yg-jalnan';
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.main .inner .txt ul li p{
+  font-family: 'Pretendard-Regular';
+  font-size: 1.6rem;
+}
+.main .inner .txt ul li span{
+  color: #FBD0DC;
+}.main img{
+  width: 100%;
+  display: block;
+}
+.top_btn{
+  width: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 50%;
+  color: #fff;
+  font-family: 'yg-jalnan';
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+}
